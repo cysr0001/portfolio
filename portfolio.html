@@ -20,7 +20,12 @@
         <div class="header position-relative">
 
             <!-- Hero Image -->
-            <img src="images/banner/portfolio_hero.jpg" alt="Designer working on their design" class="img-fluid w-100 banner-img" />
+             <picture>
+                <source srcset="images/banner/portfolio_hero.jpg" media="(min-width: 1200px)">
+                <source srcset="images/banner/portfolio_hero-768x.jpg" media="(min-width: 768px)">
+                <img src="images/banner/portfolio_hero.jpg" alt="Designer working on a desk"
+                    class="img-fluid w-100 banner-img">
+            </picture>
             <!-- End of Hero Image -->
 
             <!-- Navigation -->

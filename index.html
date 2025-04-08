@@ -21,8 +21,12 @@
         <div class="header position-relative">
 
             <!-- Hero Image -->
-            <img src="images/banner/home_hero.jpg" alt="Designer working on a desk"
-                class="img-fluid w-100 banner-img" />
+            <picture>
+                <source srcset="images/banner/home_hero.jpg" media="(min-width: 1200px)">
+                <source srcset="images/banner/home_hero-768x.jpg" media="(min-width: 768px)">
+                <img src="images/banner/home_hero.jpg" alt="Designer working on a desk"
+                    class="img-fluid w-100 banner-img">
+            </picture>
             <!-- End of Hero Image -->
 
             <!-- Navigation -->
@@ -94,31 +98,45 @@
 
             <!-- Portfolio Preview Images -->
             <div class="port-prev-img row g-0">
-  <div class="col-12 col-md-4 position-relative">
-    <img src="images/port-prev/videography_2.jpg" class="img-fluid" tabindex="0" alt="Video Portfolio Preview" />
-    <div class="overlay d-flex justify-content-center align-items-center">
-      <ul class="text-light">
-        <li><a href="https://www.youtube.com/watch?v=T-3oT-bX5jY" class="fw-bold fs-1" target="_blank">Videography</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="col-12 col-md-4 position-relative">
-    <img src="images/port-prev/ui_2.jpg" class="img-fluid" tabindex="0" alt="UX Portfolio Preview" />
-    <div class="overlay d-flex justify-content-center align-items-center">
-      <ul class="text-light">
-        <li><a href="https://www.figma.com/proto/jQC5RjHgBqwllo2GR2lKyx/bugingo-cysron-a02?node-id=34-7&p=f&t=fL2dwYLYEX50ZLJR-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=34%3A7" class="fw-bold fs-1" target="_blank">UX Design</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="col-12 col-md-4 position-relative">
-    <img src="images/port-prev/photography_2.jpg" tabindex="0" class="img-fluid" alt="Photography Portfolio Preview" />
-    <div class="overlay d-flex justify-content-center align-items-center">
-      <ul class="text-light">
-        <li><a href="#" class="fw-bold fs-1" target="_blank">Photography</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+                <div class="col-12 col-md-4 position-relative">
+                    <picture>
+                        <source srcset= "images/port-prev/photography_2-768x.jpg" media="(min-width: 768px)">
+                        <img src="images/port-prev/photography_2.jpg" alt="Designer working on a desk"
+                            class="img-fluid w-100 banner-img" tabindex="0" />
+                    </picture>
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <ul class="text-light">
+                            <li><a href="https://www.youtube.com/watch?v=T-3oT-bX5jY" class="fw-bold fs-1"
+                                    target="_blank">Videography</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 position-relative">
+                    <picture>
+                        <source srcset= "images/port-prev/ui_2-768x.jpg" media="(min-width: 768px)">
+                        <img src="images/port-prev/ui_2.jpg" alt="Designer working on a desk"
+                            class="img-fluid w-100 banner-img" tabindex="0" />
+                    </picture>
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <ul class="text-light">
+                            <li><a href="https://www.figma.com/proto/jQC5RjHgBqwllo2GR2lKyx/bugingo-cysron-a02?node-id=34-7&p=f&t=fL2dwYLYEX50ZLJR-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=34%3A7"
+                                    class="fw-bold fs-1" target="_blank">UX Design</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 position-relative">
+                    <picture>
+                        <source srcset= "images/port-prev/videography_2-768x.jpg" media="(min-width: 768px)">
+                        <img src="images/port-prev/videography_2.jpg" alt="Designer working on a desk"
+                            class="img-fluid w-100 banner-img" tabindex="0" />
+                    </picture>
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <ul class="text-light">
+                            <li><a href="#" class="fw-bold fs-1" target="_blank">Photography</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <!-- End of Portfolio Preview Images -->
 
             <!-- Interested in Working With Section -->
