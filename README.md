@@ -2,7 +2,7 @@
 
 ### Figam
 
-[Figma](https://www.figma.com/design/vNfb3gWjh6OzTLNlPsJMSI/cysron_bugingo_prototype?node-id=5-2&t=tAAlf0kXHOdDon4e-0){:target=“\_blank”}
+[Figma]("https://www.figma.com/design/vNfb3gWjh6OzTLNlPsJMSI/cysron_bugingo_prototype?node-id=5-2&t=tAAlf0kXHOdDon4e-0" :target=“\_blank”)
 
 ## About My Portfolio
 
