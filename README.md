@@ -2,7 +2,7 @@
 
 ### Figam
 
-[Figma](https://www.figma.com/design/vNfb3gWjh6OzTLNlPsJMSI/cysron_bugingo_prototype?node-id=5-2&t=tAAlf0kXHOdDon4e-0)
+[Figma](https://www.figma.com/design/vNfb3gWjh6OzTLNlPsJMSI/cysron_bugingo_prototype?node-id=5-2&t=tAAlf0kXHOdDon4e-0){:target=“\_blank”}
 
 ## About My Portfolio
 
@@ -70,17 +70,17 @@ The portfolio includes sections such as a hero banner, portfolio previews, testi
 
 ### Frameworks and Libraries
 
-- [Framework](https://animate.style/) - Framework for animation
-- [Bootstrap](https://getbootstrap.com/) - For responsive design and layout.
-- [Google Fonts](https://fonts.google.com/) - For typography.
+- [Framework](https://animate.style/){:target=“\_blank”} - Framework for animation
+- [Bootstrap](https://getbootstrap.com/){:target=“\_blank”} - For responsive design and layout.
+- [Google Fonts](https://fonts.google.com/){:target=“\_blank”} - For typography.
 
 ### Images
 
-- [Images](https://unsplash.com/) - Most of the imagery I used was downloaded from Unsplash.
+- [Images](https://unsplash.com/){:target=“\_blank”} - Most of the imagery I used was downloaded from Unsplash.
 
 ### Fonts
 
-- [Inter](https://fonts.google.com/specimen/Inter) - Used for the whole website.
+- [Inter](https://fonts.google.com/specimen/Inter){:target=“\_blank”} - Used for the whole website.
 
 ---
 
