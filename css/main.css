@@ -54,7 +54,55 @@ body{
     --bs-btn-disabled-bg: #0d6efd;
     --bs-btn-disabled-border-color: #0d6efd;
 }
+
 /* End of header section */
+
+/* Portfolio preview Home */
+.port-prev-img .position-relative {
+    overflow: hidden;
+}
+
+.port-prev-img img {
+    transition: all 0.3s ease;
+}
+
+.port-prev-img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.port-prev-img .overlay ul {
+    list-style: none;
+    /* padding: 0;
+    margin: 0; */
+    text-align: center;
+}
+.port-prev-img .overlay ul li a{
+    font-size: var(--font-size-p);
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    
+}
+.port-prev-img .overlay ul li a:hover{
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    transition: 0.5s ease-in-out;
+}
+
+.port-prev-img .position-relative img:hover {
+    filter: brightness(50%);
+}
+
+.port-prev-img .position-relative:hover .overlay {
+    opacity: 1;
+}
+/* End  of Portfolio preview*/
 
 /* Contact Styles */
 .contact-nav ul a{

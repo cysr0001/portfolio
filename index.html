@@ -13,16 +13,17 @@
 </head>
 
 <body>
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
     <!-- Header -->
-    <header>
-        <div class="header position-relative">
+    <header itemscope itemtype="https://schema.org/WPHeader">
+        <div class="header position-relative" role="banner">  
 
             <!-- Hero Image -->
             <img src="images/banner/home_hero.jpg" alt="Hero Image" class="img-fluid w-100" />
             <!-- End of Hero Image -->
 
             <!-- Navigation -->
-            <nav class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100">
+            <nav class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100" role="navigation" aria-label="Main Navigation">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
                         <img src="images/cysron_logo_white.svg" alt="Logo">
@@ -59,7 +60,7 @@
             <!-- Hero Text -->
             <div
                 class="hero-text d-flex flex-column justify-content-center align-items-center text-center position-absolute top-50 start-50 translate-middle">
-                <h1 class="card-title text-light fw-bold display-4">Hi, I'm Cysron a Designer</h1>
+                <h1 class="card-title text-light fw-bold display-4" itemprop="headline">Hi, I'm Cysron a Designer</h1>
                 <p class="card-text text-light fw-bold">
                     I craft intuitive and engaging digital experiences that put users first.
                 </p>
@@ -70,30 +71,50 @@
     <!-- End of Header -->
 
     <!-- Main -->
-    <main>
+    <main id="main-content" role="main" itemscope itemtype="https://schema.org/WebPage">
         <div class="main">
-            <!-- Portfolio Preview Section -->
+            <!-- Preview Section -->
+             <section itemscope itemtype="https://schema.org/CreativeWork">
             <div class="port-prev">
-                <h2 class="text-light fw-bold mt-0 m-3 p-4 text-center display-5">Portfolio Preview Section</h2>
-                <p class="text-light px-5 pb-5 ms-3 mb-0">
+                <h2 class="text-light fw-bold mt-0 m-3 p-4 text-center display-5" itemprop="name">Portfolio Preview Section</h2>
+                <p class="text-light px-5 pb-5 ms-3 mb-0" itemprop="description">
                     Here are some of my recent UX and web design projects. I focus on
                     creating functional and visually appealing digital experiences
                     that enhance usability and engagement.
                 </p>
             </div>
+            </section>
             <!-- End of Portfolio Preview Section -->
 
             <!-- Portfolio Preview Images -->
             <div class="port-prev-img row g-0">
-                <div class="col-4">
+                <div class="col-4 position-relative">
                     <img src="images/port-prev/videography_2.jpg" class="img-fluid" alt="Video Portfolio Preview" />
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <ul class="text-light">
+                            <li><a href="https://www.youtube.com/watch?v=T-3oT-bX5jY" class="fw-bold fs-1"
+                                    target="_blank">Videography</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 position-relative">
                     <img src="images/port-prev/ui_2.jpg" class="img-fluid" alt="UX Portfolio Preview" />
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <ul class="text-light">
+                            <li><a href="https://www.figma.com/proto/jQC5RjHgBqwllo2GR2lKyx/bugingo-cysron-a02?node-id=34-7&p=f&t=fL2dwYLYEX50ZLJR-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=34%3A7"
+                                    class="fw-bold fs-1" target="_blank">UX Design</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 position-relative">
                     <img src="images/port-prev/photography_2.jpg" class="img-fluid"
                         alt="Photography Portfolio Preview" />
+                    <div class="overlay d-flex justify-content-center align-items-center">
+                        <ul class="text-light">
+                            <li><a href="https://cysron.myportfolio.com/" class="fw-bold fs-1"
+                                    target="_blank">Photography</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- End of Portfolio Preview Images -->
@@ -131,11 +152,11 @@
     <!-- End of Main -->
 
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <div class="footer row g-0 p-4">
             <!-- Logo -->
             <div class="logo col-2">
-                <a class="navbar-brand" href="index.html"></a>
+                <a class="navbar-brand" href="index.html">
                 <img src="images/logo_cysron_black.svg" class="img-fluid" alt="Logo" />
                 </a>
             </div>
@@ -169,9 +190,9 @@
             <div class="footer-policies col-2">
                 <h3 class="fw-bold">Policies</h3>
                 <ul class="list-unstyled">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                    <li><a href="return.html">Return Policy</a></li>
                 </ul>
             </div>
             <!-- End of Footer Policies -->
@@ -182,7 +203,8 @@
                     <h3 class="fw-bold">Subscribe to our Newsletter</h3>
 
                     <form action="#">
-                        <input type="email" placeholder="Enter your email" class="m-0 p-1" />
+                        <label for="emaiL" class="d-none">Email</label>
+                        <input type="email" placeholder="Enter your email" id="emaiL" class="m-0 p-1" />
                         <button type="submit" class="p-1">Subscribe</button>
                     </form>
                 </div>
