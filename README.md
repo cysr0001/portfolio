@@ -1,5 +1,9 @@
 # Portfolio
 
+### Figam
+
+- [Figma](https://www.figma.com/design/vNfb3gWjh6OzTLNlPsJMSI/cysron_bugingo_prototype?node-id=5-2&t=tAAlf0kXHOdDon4e-0)
+
 ## About My Portfolio
 
 This portfolio is a showcase of my skills, projects, and design philosophy as a web developer and designer. It highlights my ability to create responsive, accessible, and visually appealing web experiences. The portfolio includes sections such as a hero banner, portfolio previews, testimonials, and a footer with essential links and contact information.
