@@ -107,8 +107,20 @@ body{
 }
 /* End of About Styles */
 
-/* Portfolio Page styles */
-/* End of Portfolio Page styles */
+/* services Section */
+.services-col h2{
+    color: #000;
+}
+.services-col p{
+    font-size: var(--font-size-p);
+    font-weight: 400;
+}
+.services-col ul li{
+    font-size: var(--font-size-p);
+    font-weight: 400;
+    color: #000;
+}
+/* End of Services */
 
 
 
