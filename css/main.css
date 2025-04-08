@@ -57,6 +57,12 @@ body{
 
 /* End of header section */
 
+/* Banner Image opacity reduce*/
+.banner-img{
+    filter: brightness(35%);
+}
+/* End of Banner Image styling */
+
 /* Portfolio preview Home */
 .port-prev-img .position-relative {
     overflow: hidden;
@@ -78,8 +84,6 @@ body{
 }
 .port-prev-img .overlay ul {
     list-style: none;
-    /* padding: 0;
-    margin: 0; */
     text-align: center;
 }
 .port-prev-img .overlay ul li a{
@@ -211,6 +215,10 @@ body{
 footer{
     background-color: var(--tertiary-color);
 }
+
+footer form label{
+    display: none;
+}
 footer p{
     font-size: var(--font-size-p);
 }
@@ -247,3 +255,23 @@ border: 1px solid #000;
     transition: 0.5s ease-in-out;
 }
 /* End of Footer */
+
+
+/* Media Query */
+@media (max-width: 768px) {
+    p {
+        font-size: 14px;
+    }
+    h1{
+        font-size: 24px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .logo{
+        width: 80px;
+    }
+}

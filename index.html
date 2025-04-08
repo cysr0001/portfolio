@@ -15,18 +15,18 @@
 <body>
     <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
     <!-- Header -->
-    <header itemscope itemtype="https://schema.org/WPHeader">
+    <header itemscope itemtype="https://schema.org/WPHeader" aria-label="header">
         <div class="header position-relative" role="banner">  
 
             <!-- Hero Image -->
-            <img src="images/banner/home_hero.jpg" alt="Hero Image" class="img-fluid w-100" />
+            <img src="images/banner/home_hero.jpg" alt="Designer working on a desk" class="img-fluid w-100 banner-img" />
             <!-- End of Hero Image -->
 
             <!-- Navigation -->
             <nav class="navbar navbar-expand-lg position-absolute top-0 start-0 w-100" role="navigation" aria-label="Main Navigation">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="images/cysron_logo_white.svg" alt="Logo">
+                        <img src="images/cysron_logo_white.svg" alt="Cysron Logo" class="img-fluid logo" />
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -48,7 +48,7 @@
                             <li class="nav-item">
                                 <a class="nav-link mr-5" href="services.html">Services</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item" role="">
                                 <a class="nav-link mr-2" href="contact.html">Contact</a>
                             </li>
                         </ul>
@@ -71,7 +71,7 @@
     <!-- End of Header -->
 
     <!-- Main -->
-    <main id="main-content" role="main" itemscope itemtype="https://schema.org/WebPage">
+    <main id="main-content" role="main" aria-label="main" itemscope itemtype="https://schema.org/WebPage">
         <div class="main">
             <!-- Preview Section -->
              <section itemscope itemtype="https://schema.org/CreativeWork">
@@ -88,8 +88,8 @@
 
             <!-- Portfolio Preview Images -->
             <div class="port-prev-img row g-0">
-                <div class="col-4 position-relative">
-                    <img src="images/port-prev/videography_2.jpg" class="img-fluid" alt="Video Portfolio Preview" />
+                <div class="col-12 col-md-4 position-relative">
+                    <img src="images/port-prev/videography_2.jpg" class="img-fluid" tabindex="0" alt="Video Portfolio Preview" />
                     <div class="overlay d-flex justify-content-center align-items-center">
                         <ul class="text-light">
                             <li><a href="https://www.youtube.com/watch?v=T-3oT-bX5jY" class="fw-bold fs-1"
@@ -97,8 +97,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-4 position-relative">
-                    <img src="images/port-prev/ui_2.jpg" class="img-fluid" alt="UX Portfolio Preview" />
+                <div class="col-12 col-md-4 position-relative">
+                    <img src="images/port-prev/ui_2.jpg" class="img-fluid" tabindex="0" alt="UX Portfolio Preview" />
                     <div class="overlay d-flex justify-content-center align-items-center">
                         <ul class="text-light">
                             <li><a href="https://www.figma.com/proto/jQC5RjHgBqwllo2GR2lKyx/bugingo-cysron-a02?node-id=34-7&p=f&t=fL2dwYLYEX50ZLJR-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=34%3A7"
@@ -106,8 +106,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-4 position-relative">
-                    <img src="images/port-prev/photography_2.jpg" class="img-fluid"
+                <div class="col-12 col-md-4 position-relative">
+                    <img src="images/port-prev/photography_2.jpg" tabindex="0" class="img-fluid"
                         alt="Photography Portfolio Preview" />
                     <div class="overlay d-flex justify-content-center align-items-center">
                         <ul class="text-light">
@@ -123,16 +123,16 @@
             <div class="companies">
                 <h2 class="fw-bold m-3 p-4 text-center display-3">INTERESTED IN WORKING WITH</h2>
                 <div class="companies-img row">
-                    <div class="col-3">
+                    <div class="col-12 col-md-3">
                         <img src="images/logos/microsoft-Logo.svg" alt="Microsoft" />
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-md-3">
                         <img src="images/logos/adobe-Logo.svg" alt="Adobe" />
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-md-3">
                         <img src="images/logos/shopify_logo.svg" alt="Shopify" />
                     </div>
-                    <div class="col-3">
+                    <div class="col-12 col-md-3">
                         <img src="images/logos/ninesixteen_logo.svg" alt="Ninesixteen" />
                     </div>
                 </div>
@@ -152,10 +152,10 @@
     <!-- End of Main -->
 
     <!-- Footer -->
-    <footer role="contentinfo">
+    <footer role="contentinfo" aria-label="footer" itemscope itemtype="https://schema.org/WPFooter">
         <div class="footer row g-0 p-4">
             <!-- Logo -->
-            <div class="logo col-2">
+            <div class="logo col-12 col-md-2">
                 <a class="navbar-brand" href="index.html">
                 <img src="images/logo_cysron_black.svg" class="img-fluid" alt="Logo" />
                 </a>
@@ -163,7 +163,7 @@
             <!-- End of Logo -->
 
             <!-- Footer Navigation -->
-            <div class="footer-nav col-2">
+            <div class="footer-nav col-6 col-md-2">
                 <h3 class="fw-bold">Menu</h3>
                 <ul class="list-unstyled">
                     <li><a href="index.html">Home</a></li>
@@ -176,7 +176,7 @@
             <!-- End of Footer Navigation -->
 
             <!-- Footer Contact -->
-            <div class="footer-contact col-2">
+            <div class="footer-contact col-6 col-md-2">
                 <h3 class="fw-bold">Contact</h3>
                 <ul class="list-unstyled">
                     <li>cysronb@gmail.com</li>
@@ -187,7 +187,7 @@
             <!-- End of Footer Contact -->
 
             <!-- Footer Policies -->
-            <div class="footer-policies col-2">
+            <div class="footer-policies col-6 col-md-2">
                 <h3 class="fw-bold">Policies</h3>
                 <ul class="list-unstyled">
                     <li><a href="privacy.html">Privacy Policy</a></li>
@@ -198,12 +198,12 @@
             <!-- End of Footer Policies -->
 
             <!-- Footer Social -->
-            <div class="footer-social-wrapper col-4">
+            <div class="footer-social-wrapper col-12 col-md-4">
                 <div class="footer-social">
                     <h3 class="fw-bold">Subscribe to our Newsletter</h3>
 
-                    <form action="#">
-                        <label for="emaiL" class="d-none">Email</label>
+                    <form action="#" aria-label="Subscribe to our Newsletter">
+                        <label for="emaiL" class="invisible">Enter your email</label>
                         <input type="email" placeholder="Enter your email" id="emaiL" class="m-0 p-1" />
                         <button type="submit" class="p-1">Subscribe</button>
                     </form>
