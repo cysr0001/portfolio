@@ -23,12 +23,14 @@ body{
 .navbar li a{
     color: #fff;
     font-weight: 700;
+    border-radius: 10px;
     font-size: var(--font-size-p);
 }
 
 .navbar li a:hover{
     background-color: var(--primary-color);
     color: #000;
+    transition: 0.5s ease-in-out;
 }
 
 .hero-text p{
@@ -54,6 +56,60 @@ body{
 }
 /* End of header section */
 
+/* Contact Styles */
+.contact-nav ul a{
+    color: #000;
+}
+
+.container-header h1{
+    color: #000;
+}
+.contact-header p{
+    font-size: var(--font-size-p);
+    color: #000;
+    font-weight: 400;
+
+}
+
+.contact-form input, textarea{
+    border: 1px solid #000;
+}
+
+.contact-form .btn{
+    font-size: var(--font-size-p);
+    color: #fff;
+    background-color: #000;
+    padding: 0.5rem 1.5rem;
+
+}
+.contact-form .btn:hover{
+    background-color: #fff;
+    border: solid var(--primary-color);
+    color: #000;
+    transition: 0.5s ease-in-out;
+}
+/* End of Contact Styles */
+
+/* About Styles */
+.bio-bg h2, .bio-bg p{
+    color: #000;
+}
+.bio-bg p, .skills_tools li{
+    font-size: var(--font-size-p);
+    font-weight: 400;
+}
+
+.about-quote{
+    font-size: var(--font-size-p);
+    font-weight: 400;
+    color: #fff;
+    background-color: #000;
+}
+/* End of About Styles */
+
+
+
+/* Portfolio Section */
 .port-prev{
     background-color: #000;
 }
@@ -64,6 +120,9 @@ body{
 /* End of Portfolio Preview Section */
 
 /* Interested in Working With Section */
+.companies h2{
+    color: #000;
+}
 .companies-img{
     max-width: 100%;
     height: auto;
