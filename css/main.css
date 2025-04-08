@@ -107,6 +107,9 @@ body{
 }
 /* End of About Styles */
 
+/* Portfolio Page styles */
+/* End of Portfolio Page styles */
+
 
 
 /* Portfolio Section */
@@ -132,7 +135,8 @@ body{
     height: auto;
     max-width: 100%;
     display: block;
-    margin: 0 auto;}
+    margin: 0 auto;
+}
 /* End of Interested in Working With Section */
 
 /* Quote */
