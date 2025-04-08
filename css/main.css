@@ -2,7 +2,7 @@
 
 /* CSS Variables */
 :root {
-  --primary-color: #e3c990;
+  --primary-color: #c6a660;
   --secondary-color: #9cb498;
   --tertiary-color: #d7c19d;
   --font-family: "Inter", sans-serif;
@@ -192,35 +192,6 @@ textarea {
 
 .port-section img {
   animation: brightnessAnimation 3.5s ease-in-out infinite;
-}
-
-/* Keyframes for color-changing animation */
-@keyframes buttonColorChange {
-  0% {
-    background-color: #000000;
-    color: #ffffff;
-  }
-  25% {
-    background-color: var(--primary-color);
-    color: #000;
-  }
-
-  50% {
-    background-color: var(--tertiary-color);
-    color: #000;
-    drop-shadow: 0 0 5px var(--primary-color);
-  }
-
-  100% {
-    background-color: #000000;
-    color: #ffffff;
-  }
-}
-
-/* Apply animation to the button */
-.btn-animated {
-  animation: buttonColorChange 8s infinite;
-  transition: background-color 2s ease-in-out, color 0.5s ease;
 }
 
 /* End of the animation */
