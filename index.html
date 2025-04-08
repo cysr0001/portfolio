@@ -1,260 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- My CSS -->
     <link rel="stylesheet" href="css/main.css" />
     <title>Cysron Creatives</title>
-</head>
+  </head>
 
-<body>
-    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+  <body>
+    <a href="#main-content" class="visually-hidden-focusable"
+      >Skip to main content</a
+    >
     <!-- Header -->
-    <header itemscope itemtype="https://schema.org/WPHeader" aria-label="header" role="banner">
-        <div class="header position-relative">
+    <header
+      itemscope
+      itemtype="https://schema.org/WPHeader"
+      aria-label="header"
+      role="banner"
+    >
+      <div class="header position-relative">
+        <!-- Hero Image -->
+        <picture>
+          <source
+            srcset="images/banner/home_hero.jpg"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="images/banner/home_hero-768x.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="images/banner/home_hero.jpg"
+            alt="Designer working on a desk"
+            class="img-fluid w-100 banner-img"
+          />
+        </picture>
+        <!-- End of Hero Image -->
 
-            <!-- Hero Image -->
-            <picture>
-                <source srcset="images/banner/home_hero.jpg" media="(min-width: 1200px)">
-                <source srcset="images/banner/home_hero-768x.jpg" media="(min-width: 768px)">
-                <img src="images/banner/home_hero.jpg" alt="Designer working on a desk"
-                    class="img-fluid w-100 banner-img">
-            </picture>
-            <!-- End of Hero Image -->
+        <!-- Navigation -->
+        <nav
+          class="navbar navbar-light navbar-expand-lg position-absolute top-0 start-0 w-100"
+          role="navigation"
+          aria-label="Main Navigation"
+        >
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="images/cysron_logo_white.svg"
+                alt="Cysron Logo"
+                class="img-fluid logo"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <!-- Navigation -->
-            <nav class="navbar navbar-light navbar-expand-lg position-absolute top-0 start-0 w-100" role="navigation"
-                aria-label="Main Navigation">
-                <div class="container">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/cysron_logo_white.svg" alt="Cysron Logo" class="img-fluid logo" />
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                            <li class="nav-item">
-                                <a class="nav-link mr-2" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mr-2" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mr-2" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mr-5" href="services.html">Services</a>
-                            </li>
-                            <li class="nav-item" role="">
-                                <a class="nav-link mr-2" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- End of Navigation -->
-
-            <!-- Hero Text -->
-            <div
-                class="hero-text d-flex flex-column justify-content-center align-items-center text-center position-absolute top-50 start-50 translate-middle">
-                <h1 class="card-title text-light fw-bold display-4 mb-3" itemprop="headline">Hi, I'm Cysron a Designer
-                </h1>
-                <p class="card-text text-light fw-bold">
-                    I craft intuitive and engaging digital experiences that put users first.
-                </p>
-                <a href="portfolio.html" class="btn btn-primary py-3 px-5 fs-4 fw-bold btn-animated">My Work</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link mr-2" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-2" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-2" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-5" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-2" href="contact.html">Contact</a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
+        <!-- End of Navigation -->
+
+        <!-- Hero Text -->
+        <div
+          class="hero-text d-flex flex-column justify-content-center align-items-center text-center position-absolute top-50 start-50 translate-middle"
+        >
+          <h1
+            class="card-title text-light fw-bold display-4 mb-3"
+            itemprop="headline"
+          >
+            Hi, I'm Cysron a Designer
+          </h1>
+          <p class="card-text text-light fw-bold">
+            I craft intuitive and engaging digital experiences that put users
+            first.
+          </p>
+          <a
+            href="portfolio.html"
+            class="btn btn-primary py-3 px-5 fs-4 fw-bold btn-animated"
+            >My Work</a
+          >
         </div>
+      </div>
     </header>
     <!-- End of Header -->
 
     <!-- Main -->
-    <main id="main-content" role="main" aria-label="main" itemscope itemtype="https://schema.org/WebPage">
-        <div class="main">
-            <!-- Preview Section -->
-            <section itemscope itemtype="https://schema.org/CreativeWork">
-                <div class="port-prev">
-                    <h2 class="text-light fw-bold mt-0 m-3 p-4 text-center display-5" itemprop="name">Portfolio Preview
-                        Section</h2>
-                    <p class="text-light px-5 pb-5 ms-3 mb-0" itemprop="description">
-                        Here are some of my recent UX and web design projects. I focus on
-                        creating functional and visually appealing digital experiences
-                        that enhance usability and engagement.
-                    </p>
-                </div>
-            </section>
-            <!-- End of Portfolio Preview Section -->
+    <main
+      id="main-content"
+      role="main"
+      aria-label="main"
+      itemscope
+      itemtype="https://schema.org/WebPage"
+    >
+      <div class="main">
+        <!-- Preview Section -->
+        <section itemscope itemtype="https://schema.org/CreativeWork">
+          <div class="port-prev">
+            <h2
+              class="text-light fw-bold mt-0 m-3 p-4 text-center display-5"
+              itemprop="name"
+            >
+              Portfolio Preview Section
+            </h2>
+            <p class="text-light px-5 pb-5 ms-3 mb-0" itemprop="description">
+              Here are some of my recent UX and web design projects. I focus on
+              creating functional and visually appealing digital experiences
+              that enhance usability and engagement.
+            </p>
+          </div>
+        </section>
+        <!-- End of Portfolio Preview Section -->
 
-            <!-- Portfolio Preview Images -->
-            <div class="port-prev-img row g-0">
-                <div class="col-12 col-md-4 position-relative">
-                    <picture>
-                        <source srcset="images/port-prev/photography_2-768x.jpg" media="(min-width: 768px)">
-                        <img src="images/port-prev/photography_2.jpg" alt="Designer working on a desk"
-                            class="img-fluid w-100 banner-img" tabindex="0" />
-                    </picture>
-                    <div class="overlay d-flex justify-content-center align-items-center">
-                        <ul class="text-light">
-                            <li><a href="https://www.youtube.com/watch?v=T-3oT-bX5jY" class="fw-bold fs-1"
-                                    target="_blank">Videography</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 position-relative">
-                    <picture>
-                        <source srcset="images/port-prev/ui_2-768x.jpg" media="(min-width: 768px)">
-                        <img src="images/port-prev/ui_2.jpg" alt="Designer working on a desk"
-                            class="img-fluid w-100 banner-img" tabindex="0" />
-                    </picture>
-                    <div class="overlay d-flex justify-content-center align-items-center">
-                        <ul class="text-light">
-                            <li><a href="https://www.figma.com/proto/jQC5RjHgBqwllo2GR2lKyx/bugingo-cysron-a02?node-id=34-7&p=f&t=fL2dwYLYEX50ZLJR-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=34%3A7"
-                                    class="fw-bold fs-1" target="_blank">UX Design</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 position-relative">
-                    <picture>
-                        <source srcset="images/port-prev/videography_2-768x.jpg" media="(min-width: 768px)">
-                        <img src="images/port-prev/videography_2.jpg" alt="Designer working on a desk"
-                            class="img-fluid w-100 banner-img" tabindex="0" />
-                    </picture>
-                    <div class="overlay d-flex justify-content-center align-items-center">
-                        <ul class="text-light">
-                            <li><a href="#" class="fw-bold fs-1" target="_blank">Photography</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <!-- Portfolio Preview Images -->
+        <div class="port-prev-img row g-0">
+          <div class="col-12 col-md-4 position-relative">
+            <picture>
+              <source
+                srcset="images/port-prev/photography_2-768x.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="images/port-prev/photography_2.jpg"
+                alt="Designer working on a desk"
+                class="img-fluid w-100 banner-img"
+                tabindex="0"
+              />
+            </picture>
+            <div
+              class="overlay d-flex justify-content-center align-items-center"
+            >
+              <ul class="text-light">
+                <li>
+                  <a
+                    href="https://www.youtube.com/watch?v=T-3oT-bX5jY"
+                    class="fw-bold fs-1"
+                    target="_blank"
+                    >Videography</a
+                  >
+                </li>
+              </ul>
             </div>
-            <!-- End of Portfolio Preview Images -->
-
-            <!-- Interested in Working With Section -->
-            <div class="companies">
-                <h2 class="fw-bold m-3 p-4 text-center display-3">INTERESTED IN WORKING WITH</h2>
-                <div class="companies-img row">
-                    <div class="col-12 col-md-3">
-                        <img src="images/logos/microsoft-Logo.svg" alt="Microsoft" />
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <img src="images/logos/adobe-Logo.svg" alt="Adobe" />
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <img src="images/logos/shopify_logo.svg" alt="Shopify" />
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <img src="images/logos/ninesixteen_logo.svg" alt="Ninesixteen" />
-                    </div>
-                </div>
+          </div>
+          <div class="col-12 col-md-4 position-relative">
+            <picture>
+              <source
+                srcset="images/port-prev/ui_2-768x.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="images/port-prev/ui_2.jpg"
+                alt="Designer working on a desk"
+                class="img-fluid w-100 banner-img"
+                tabindex="0"
+              />
+            </picture>
+            <div
+              class="overlay d-flex justify-content-center align-items-center"
+            >
+              <ul class="text-light">
+                <li>
+                  <a
+                    href="https://www.figma.com/proto/jQC5RjHgBqwllo2GR2lKyx/bugingo-cysron-a02?node-id=34-7&p=f&t=fL2dwYLYEX50ZLJR-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=34%3A7"
+                    class="fw-bold fs-1"
+                    target="_blank"
+                    >UX Design</a
+                  >
+                </li>
+              </ul>
             </div>
-            <!-- End of Interested in Working With Section -->
-
-            <!-- Quote Section -->
-            <div class="quote text-center p-5">
-                <q>Design is not just what it looks like and feels like. Design is
-                    how it works.</q>
-                <p class="p-5">- Steve Jobs</p>
+          </div>
+          <div class="col-12 col-md-4 position-relative">
+            <picture>
+              <source
+                srcset="images/port-prev/videography_2-768x.jpg"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="images/port-prev/videography_2.jpg"
+                alt="Designer working on a desk"
+                class="img-fluid w-100 banner-img"
+                tabindex="0"
+              />
+            </picture>
+            <div
+              class="overlay d-flex justify-content-center align-items-center"
+            >
+              <ul class="text-light">
+                <li>
+                  <a href="#" class="fw-bold fs-1" target="_blank"
+                    >Photography</a
+                  >
+                </li>
+              </ul>
             </div>
-            <!-- End of Quote Section -->
+          </div>
         </div>
-        <!-- End of Main -->
+        <!-- End of Portfolio Preview Images -->
+
+        <!-- Interested in Working With Section -->
+        <div class="companies">
+          <h2 class="fw-bold m-3 p-4 text-center display-3">
+            INTERESTED IN WORKING WITH
+          </h2>
+          <div class="companies-img row">
+            <div class="col-12 col-md-3">
+              <img src="images/logos/microsoft-Logo.svg" alt="Microsoft" />
+            </div>
+            <div class="col-12 col-md-3">
+              <img src="images/logos/adobe-Logo.svg" alt="Adobe" />
+            </div>
+            <div class="col-12 col-md-3">
+              <img src="images/logos/shopify_logo.svg" alt="Shopify" />
+            </div>
+            <div class="col-12 col-md-3">
+              <img src="images/logos/ninesixteen_logo.svg" alt="Ninesixteen" />
+            </div>
+          </div>
+        </div>
+        <!-- End of Interested in Working With Section -->
+
+        <!-- Quote Section -->
+        <div class="quote text-center p-5">
+          <q
+            >Design is not just what it looks like and feels like. Design is how
+            it works.</q
+          >
+          <p class="p-5">- Steve Jobs</p>
+        </div>
+        <!-- End of Quote Section -->
+      </div>
+      <!-- End of Main -->
     </main>
     <!-- End of Main -->
 
     <!-- Footer -->
-    <footer role="contentinfo" aria-label="footer" itemscope itemtype="https://schema.org/WPFooter">
-        <div class="footer row g-0 p-4">
-            <!-- Logo -->
-            <div class="logo col-12 col-md-12">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo_cysron_black.svg" class="img-fluid" alt="Logo" />
-                </a>
-            </div>
-            <!-- End of Logo -->
-
-            <!-- Footer Navigation -->
-            <div class="footer-nav col-6 col-md-2">
-                <h3 class="fw-bold">Menu</h3>
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <!-- End of Footer Navigation -->
-
-            <!-- Footer Contact -->
-            <div class="footer-contact col-6 col-md-2">
-                <h3 class="fw-bold">Contact</h3>
-                <ul class="list-unstyled">
-                    <li>cysronb@gmail.com</li>
-                    <li>+1 (555) 555-5555</li>
-                    <li>Mon - Fri, 9AM - 5PM</li>
-                </ul>
-            </div>
-            <!-- End of Footer Contact -->
-
-            <!-- Footer Policies -->
-            <div class="footer-policies col-6 col-md-4">
-                <h3 class="fw-bold">Policies</h3>
-                <ul class="list-unstyled">
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms of Service</a></li>
-                    <li><a href="return.html">Return Policy</a></li>
-                </ul>
-            </div>
-            <!-- End of Footer Policies -->
-
-            <!-- Footer Social -->
-            <div class="footer-social-wrapper col-12 col-md-4">
-                <div class="footer-social">
-                    <h3 class="fw-bold">Subscribe to our Newsletter</h3>
-
-                    <form action="#" aria-label="Subscribe to our Newsletter">
-                        <label for="emaiL" class="invisible">Enter your email</label>
-                        <input type="email" placeholder="Enter your email" id="emaiL" class="m-0 p-1" />
-                        <button type="submit" class="p-1">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-            <div class="copyright">
-                <p class="m-0 text-center">COPYRIGHT&copy;2025 CYSRON DESIGNS LTD. ALL RIGHTS RESERVED</p>
-            </div>
-            <!-- End of Footer Social -->
+    <footer
+      aria-label="footer"
+      itemscope
+      itemtype="https://schema.org/WPFooter"
+    >
+      <div class="footer row g-0 p-4">
+        <!-- Logo -->
+        <div class="logo col-12 col-md-12">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="images/logo_cysron_black.svg"
+              class="img-fluid"
+              alt="Logo"
+            />
+          </a>
         </div>
+        <!-- End of Logo -->
+
+        <!-- Footer Navigation -->
+        <div class="footer-nav col-6 col-md-2">
+          <h3 class="fw-bold">Menu</h3>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- End of Footer Navigation -->
+
+        <!-- Footer Contact -->
+        <div class="footer-contact col-6 col-md-2">
+          <h3 class="fw-bold">Contact</h3>
+          <ul class="list-unstyled">
+            <li>cysronb@gmail.com</li>
+            <li>+1 (555) 555-5555</li>
+            <li>Mon - Fri, 9AM - 5PM</li>
+          </ul>
+        </div>
+        <!-- End of Footer Contact -->
+
+        <!-- Footer Policies -->
+        <div class="footer-policies col-6 col-md-4">
+          <h3 class="fw-bold">Policies</h3>
+          <ul class="list-unstyled">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="return.html">Return Policy</a></li>
+          </ul>
+        </div>
+        <!-- End of Footer Policies -->
+
+        <!-- Footer Social -->
+        <div class="footer-social-wrapper col-12 col-md-4">
+          <div class="footer-social">
+            <h3 class="fw-bold">Subscribe to our Newsletter</h3>
+
+            <form action="#" aria-label="Subscribe to our Newsletter">
+              <label for="emaiL" class="invisible">Enter your email</label>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                id="emaiL"
+                class="m-0 p-1"
+              />
+              <button type="submit" class="p-1">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="m-0 text-center">
+            COPYRIGHT&copy;2025 CYSRON DESIGNS LTD. ALL RIGHTS RESERVED
+          </p>
+        </div>
+        <!-- End of Footer Social -->
+      </div>
     </footer>
     <!-- End of Footer -->
-    </div>
 
     <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        // Initialize ScrollReveal
-        ScrollReveal().reveal('.port-prev-img img', {
-            distance: '50px',
-            duration: 1000,
-            easing: 'ease-in-out',
-            origin: 'bottom',
-            interval: 200, // Delay between each element
-        });
+      // Initialize ScrollReveal
+      ScrollReveal().reveal(".port-prev-img img", {
+        distance: "50px",
+        duration: 1000,
+        easing: "ease-in-out",
+        origin: "bottom",
+        interval: 200, // Delay between each element
+      });
     </script>
-</body>
-
+  </body>
 </html>
